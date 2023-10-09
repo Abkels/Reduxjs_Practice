@@ -8,16 +8,16 @@ const ReduxState = createSlice({
   name: "user",
   initialState,
   reducers: {
-    LoginUser: (state, actions) =>{
+    LoginUser: (state, action) =>{
         // state.current holds the current state. actions.payload changes or updates the state
-        state.current = actions.payload
+        state.current = action.payload
     },
-    logoutUser : (state) =>{
+    LogoutUser : (state) =>{
         state.current = null;
     }
   }
 });
 
-export const {LoginUser, logoutUser} = ReduxState.actions
+export const {LoginUser, LogoutUser} = ReduxState.actions
 
 export default ReduxState.reducer

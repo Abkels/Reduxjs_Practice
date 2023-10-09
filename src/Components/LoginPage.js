@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { LoginUser , logoutUser} from './ReduxState/ReduxState'
+import { LoginUser, LogoutUser } from './ReduxState/ReduxState';
 
 const LoginPage = () => {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const LoginPage = () => {
       }}>Login</button>
 
       <button onClick={()=>{
-        dispatch(logoutUser())
+        dispatch(LogoutUser())
       }}>
         Logout</button>
     </div>
